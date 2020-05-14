@@ -1,0 +1,193 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --accent-white: #ffffff;
+  --background-color: #f5f4fa;
+}
+
+/* Цвет основного текста #757575 */
+/* Цвет вторичного текста #212121 */
+/* белый #FFFFFF */
+/* голубой акцент  #2196F3 */
+/* Футер Цвет адреса rgba(255, 255, 255, 0.6) */
+/* Футер ссылки соц сетей background: #AFB1B8 */
+/* Футер корирайт rgba(255, 255, 255, 0.4) */
+/* фон вторичный background: #F5F4FA */
+/* фон header background: #FFFFFF;
+/* фон footer background: #2F303A; */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--accent-white);
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+}
+/* Logo */
+.logo {
+  color: var(--accent-text-color);
+  
+font-family: Raleway;
+font-size: 26px;
+line-height: 1.2px;
+letter-spacing: 0.03em;
+
+}
+
+.logo-text {
+  color: #000000;
+}
+
+/* site nav */
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+ul .site-nav,
+.contact {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+.contact .link,
+.social .link {
+  color: var(--primary-text-color);
+}
+
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Герой */
+.hero {
+  color: var(--accent-white);
+
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+
+/* Sections */
+ul {
+  list-style: none;
+}
+.section-title,
+.section-subtitle,
+.section-people {
+  color: var(--title-text-color);
+}
+.section-lead {
+  color: var(--accent-white);
+}
+.section-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+.section-subtitle,
+.section-lead 
+.end {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+}
+.section-fon {
+  background-color: var(--background-color);
+}
+.section-people {
+
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+}
+
+
+/* Button */
+.button {
+  background-color: var(--accent-text-color);
+  color: var(--accent-white);
+  font-family: inherit;
+ 
+  }
+
+  
+
+/* Footer */
+.footer {
+  background-color: #2f303a;
+  color: var(--accent-white);
+}
+
+.logo-text-footer {
+  color: var(--accent-white);
+}
+.address-primary {
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em; 
+}
+.address-secondary {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.copyrigth {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+
+/* Цвет основного текста #757575 */
+/* Цвет вторичного текста #212121 */
+/* белый #FFFFFF */
+/* голубой акцент  #2196F3 */
+/* Футер Цвет адреса rgba(255, 255, 255, 0.6) */
+/* Футер ссылки соц сетей background: #AFB1B8 */
+/* Футер корирайт rgba(255, 255, 255, 0.4) */
+/* фон вторичный background: #F5F4FA */
+/* фон header background: #FFFFFF;
+/* фон footer background: #2F303A; */

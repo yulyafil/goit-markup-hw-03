@@ -1,0 +1,102 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --accent-white: #ffffff;
+  --background-color: #f5f4fa;
+}
+
+/* Цвет основного текста #757575 */
+/* Цвет вторичного текста #212121 */
+/* белый #FFFFFF */
+/* голубой акцент  #2196F3 */
+/* Футер Цвет адреса rgba(255, 255, 255, 0.6) */
+/* Футер ссылки соц сетей background: #AFB1B8 */
+/* Футер корирайт rgba(255, 255, 255, 0.4) */
+/* фон вторичный background: #F5F4FA */
+/* фон header background: #FFFFFF;
+/* фон footer background: #2F303A; */
+
+/* Не поставил, не человек) */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--accent-white);
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+}
+
+/* Button */
+.button-portfolio {
+  color: var(--title-text-color);
+  background: var(--background-color);
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: var(--accent-white);
+  background-color: var(--accent-text-color);
+}
+.title {
+  color: var(--title-text-color);
+}
+.title-text {
+  color: var(--accent-white);
+}
+.ul-fon {
+  background-color: var(--background-color);
+}
+a {
+  text-decoration: none;
+}
+ul p {
+  color: var(--primary-text-color);
+}
+
+/* Footer */
+.footer {
+  background-color: #2f303a;
+  color: var(--accent-white);
+}
+
+.logo-text-footer {
+  color: var(--accent-white);
+}
+.address-primary {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-secondary {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.end {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.copyrigth {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
