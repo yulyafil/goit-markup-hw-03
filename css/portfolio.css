@@ -34,21 +34,75 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+/* Logo */
+
+.logo {
+  color: var(--accent-text-color);
+
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.2px;
+  letter-spacing: 0.03em;
+}
+.logo-nav {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.logo-text {
+  color: #000000;
+}
+
 /* Button */
 .button-portfolio {
+  display: inline-block;
+  border-radius: 4px;
+  border: solid transparent;
+  padding: 6px 22px;
+
   color: var(--title-text-color);
   background: var(--background-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
   color: var(--accent-white);
   background-color: var(--accent-text-color);
 }
+.portfolio {
+  margin: 0;
+}
+.portfolio-page {
+  background-color: var(--background-color);
+}
+.portfolio-two {
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
 .title {
+  /* display: inline-block; */
+  margin-top: 0;
+  margin-bottom: 4px;
   color: var(--title-text-color);
 }
-.title-text {
+.title p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.title-texts {
+  margin: 0;
   color: var(--accent-white);
+}
+.title-text {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 .ul-fon {
   background-color: var(--background-color);
@@ -58,6 +112,11 @@ a {
 }
 ul p {
   color: var(--primary-text-color);
+}
+
+.img-portfolio {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 /* Footer */
@@ -93,6 +152,7 @@ ul p {
   text-transform: uppercase;
 }
 .copyrigth {
+  margin: 0;
   color: rgba(255, 255, 255, 0.4);
   font-weight: normal;
   font-size: 12px;
