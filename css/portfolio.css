@@ -17,7 +17,6 @@
 /* фон header background: #FFFFFF;
 /* фон footer background: #2F303A; */
 
-/* Не поставил, не человек) */
 html {
   box-sizing: border-box;
 }
@@ -33,7 +32,11 @@ body {
   text-decoration: none;
   font-family: Roboto, sans-serif;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* Logo */
 
 .logo {
@@ -44,20 +47,115 @@ body {
   line-height: 1.2px;
   letter-spacing: 0.03em;
 }
+
 .logo-nav {
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 25px;
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 85px;
 }
+
 .logo-text {
   color: #000000;
 }
 
+/* site nav */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 3px solid red;
+}
+.link {
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 80px;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* .site-nav .items + .items {
+  margin-left: 50px;
+} */
+.site-nav .items:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+ul .site-nav,
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contact .link,
+.social .link {
+  color: var(--primary-text-color);
+}
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+.contact .link + .link {
+  margin-left: 30px;
+}
+.contact .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-text-color);
+}
+
 /* Button */
+.menu {
+  padding-top: 93px;
+  padding-bottom: 50px;
+}
+
+.portfolio {
+  margin: 0;
+  text-align: center;
+}
+.portfolio-btn {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-btn .menu-btn:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button-portfolio {
-  display: inline-block;
   border-radius: 4px;
   border: solid transparent;
   padding: 6px 22px;
@@ -76,34 +174,60 @@ body {
   color: var(--accent-white);
   background-color: var(--accent-text-color);
 }
-.portfolio {
-  margin: 0;
-}
+/* Основной контент */
 .portfolio-page {
+  padding-bottom: 94px;
   background-color: var(--background-color);
 }
-.portfolio-two {
-  padding-top: 50px;
-  padding-bottom: 94px;
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
 }
-.title {
-  /* display: inline-block; */
+.img-link {
+  display: block;
+}
+
+.add {
+  display: block;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc((100% - 60px) / 3);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.add:nth-child(3n) {
+  margin-right: 0;
+}
+
+.add:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.add-text {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+.add .title {
   margin-top: 0;
   margin-bottom: 4px;
+
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
-.title p {
-  margin-top: 0;
-  margin-bottom: 20px;
+.title-text {
+  margin: 0;
 }
 .title-texts {
   margin: 0;
+
   color: var(--accent-white);
 }
-.title-text {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
+
 .ul-fon {
   background-color: var(--background-color);
 }
@@ -114,20 +238,19 @@ ul p {
   color: var(--primary-text-color);
 }
 
-.img-portfolio {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
 /* Footer */
 .footer {
   background-color: #2f303a;
   color: var(--accent-white);
 }
-
+.footers {
+  display: flex;
+  align-items: baseline;
+}
 .logo-text-footer {
   color: var(--accent-white);
 }
+
 .address-primary {
   font-style: normal;
   font-weight: 400;
@@ -144,15 +267,36 @@ ul p {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.end {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.footer-address {
+  display: inline-block;
 }
+
+.footer-link {
+  display: inline-block;
+  margin-left: 179px;
+}
+
+.footer-end {
+  margin-top: 56px;
+  margin-bottom: 21px;
+}
+.footer-button {
+  display: inline-block;
+  margin-left: 102px;
+  align-self: flex-start;
+}
+
+.logo-nav.two {
+  margin-top: 46px;
+  margin-bottom: 10px;
+}
+
 .copyrigth {
+  display: block;
   margin: 0;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  justify-content: center;
   color: rgba(255, 255, 255, 0.4);
   font-weight: normal;
   font-size: 12px;

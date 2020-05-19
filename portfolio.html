@@ -12,8 +12,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/portfolio.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/common.css" />
   </head>
 
@@ -21,17 +21,19 @@
     <!-- Шапка сайта -->
     <header>
       <div class="container">
-        <nav>
+        <nav class="main-nav">
           <a href="./index.html" class="logo">
             <p class="logo-nav">Web <span class="logo-text">Studio</span></p>
           </a>
 
           <ul class="site-nav list">
-            <li><a href="/index.html" class="link">Студия</a></li>
-            <li>
+            <li class="items">
+              <a href="/index.html" class="link">Студия</a>
+            </li>
+            <li class="items">
               <a href="./portfolio.html" class="link current">Портфолио</a>
             </li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="items"><a href="" class="link">Контакты</a></li>
           </ul>
 
           <div class="contact">
@@ -46,21 +48,23 @@
     </header>
 
     <main>
-      <section>
+      <section class="menu">
         <div class="container">
           <h1 class="portfolio">Портфолио</h1>
-          <ul>
-            <li><button type="button" class="button-portfolio">Все</button></li>
-            <li>
+          <ul class="portfolio-btn">
+            <li class="menu-btn">
+              <button type="button" class="button-portfolio">Все</button>
+            </li>
+            <li class="menu-btn">
               <button type="button" class="button-portfolio">Веб-сайты</button>
             </li>
-            <li>
+            <li class="menu-btn">
               <button type="button" class="button-portfolio">Приложения</button>
             </li>
-            <li>
+            <li class="menu-btn">
               <button type="button" class="button-portfolio">Дизайн</button>
             </li>
-            <li>
+            <li class="menu-btn">
               <button type="button" class="button-portfolio">Маркетинг</button>
             </li>
           </ul>
@@ -69,150 +73,168 @@
 
       <section class="portfolio-page">
         <div class="container">
-          <ul>
-            <li>
-              <a href="">
+          <ul class="gallery">
+            <li class="add">
+              <a class="img-link" href="">
                 <img
                   class="img-portfolio"
                   src="./image/portfolio1.jpg"
                   alt="Люди"
-                  width="380"
+                  width="370"
                 />
-                <h2 class="title">Технокряк</h2>
-                <p class="title-text">Веб-сайт</p>
-                <p class="title-texts">
-                  Технокряк это современная площадка распространения
-                  коронавируса. Компании используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкурентов.
-                </p>
+                <div class="add-text">
+                  <h2 class="title">Технокряк</h2>
+                  <p class="title-text">Веб-сайт</p>
+                  <!-- <p class="title-texts">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p> -->
+                </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="add">
+              <a class="img-link" href="">
                 <img
                   class="img-portfolio"
                   src="./image/portfolio2.jpg"
                   alt="Баскетбол"
-                  width="380"
+                  width="370"
                 />
-                <h2 class="title">Постер New Orlean vs Golden Stars</h2>
-                <p class="title-text">Дизайн</p>
-                <p class="title-texts">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-                  incidunt?
-                </p>
+                <div class="add-text">
+                  <h2 class="title">Постер New Orlean vs Golden Star</h2>
+                  <p class="title-text">Дизайн</p>
+                  <!-- <p class="title-texts">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa, incidunt?
+                  </p> -->
+                </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="add">
+              <a class="img-link" href="">
                 <img
                   class="img-portfolio"
                   src="./image/portfolio3.jpg"
                   alt="Рыба"
-                  width="380"
+                  width="370"
                 />
-                <h2 class="title">Ресторан Seafood</h2>
-                <p class="title-text">Приложение</p>
-                <p class="title-texts">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Similique, corporis!
-                </p>
+                <div class="add-text">
+                  <h2 class="title">Ресторан Seafood</h2>
+                  <p class="title-text">Приложение</p>
+                  <!-- <p class="title-texts">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique, corporis!
+                  </p> -->
+                </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="add">
+              <a class="img-link" href="">
                 <img
                   class="img-portfolio"
                   src="./image/prime.jpg"
                   alt="Наушники"
-                  width="380"
+                  width="370"
                 />
-                <h2 class="title">Проект Prime</h2>
-                <p class="title-text">Маркетинг</p>
-                <p class="title-texts">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestiae, quibusdam.
-                </p>
+                <div class="add-text">
+                  <h2 class="title">Проект Prime</h2>
+                  <p class="title-text">Маркетинг</p>
+                  <!-- <p class="title-texts">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, quibusdam.
+                  </p> -->
+                </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="add">
+              <a class="img-link" href="">
                 <img
                   class="img-portfolio"
                   src="./image/boxes.jpg"
                   alt="Коробки"
-                  width="380"
+                  width="370"
                 />
-                <h2 class="title">Проект Boxes</h2>
-                <p class="title-text">Приложение</p>
-                <p class="title-texts">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Similique, eos.
-                </p>
+                <div class="add-text">
+                  <h2 class="title">Проект Boxes</h2>
+                  <p class="title-text">Приложение</p>
+                  <!-- <p class="title-texts">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique, eos.
+                  </p> -->
+                </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="add">
+              <a class="img-link" href="">
                 <img
                   class="img-portfolio"
                   src="./image/Borders.jpg"
                   alt="Монитор"
-                  width="380"
+                  width="370"
                 />
-                <h2 class="title">Inspiration has no Borders</h2>
-                <p class="title-text">Веб-сайт</p>
-                <p class="title-texts">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Saepe, atque?
-                </p>
+                <div class="add-text">
+                  <h2 class="title">Inspiration has no Borders</h2>
+                  <p class="title-text">Веб-сайт</p>
+                  <!-- <p class="title-texts">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Saepe, atque?
+                  </p> -->
+                </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="add">
+              <a class="img-link" href="">
                 <img
                   class="img-portfolio"
                   src="./image/portfolio4.jpg"
                   alt="Журнал"
-                  width="380"
+                  width="370"
                 />
-                <h2 class="title">Издание Limited Edition</h2>
-                <p class="title-text">Дизайн</p>
-                <p class="title-texts">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Saepe, atque?
-                </p>
+                <div class="add-text">
+                  <h2 class="title">Издание Limited Edition</h2>
+                  <p class="title-text">Дизайн</p>
+                  <!-- <p class="title-texts">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Saepe, atque?
+                  </p> -->
+                </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="add">
+              <a class="img-link" href="">
                 <img
                   class="img-portfolio"
                   src="./image/lab.jpg"
                   alt="Карточка"
-                  width="380"
+                  width="370"
                 />
-                <h2 class="title">Проект LAB</h2>
-                <p class="title-text">Маркетинг</p>
-                <p class="title-texts">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum, temporibus?
-                </p>
+                <div class="add-text">
+                  <h2 class="title">Проект LAB</h2>
+                  <p class="title-text">Маркетинг</p>
+                  <!-- <p class="title-texts">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum, temporibus?
+                  </p> -->
+                </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="add">
+              <a class="img-link" href="">
                 <img
                   class="img-portfolio"
                   src="./image/business.jpg"
                   alt="Ноутбук"
-                  width="380"
+                  width="370"
                 />
-                <h2 class="title">Growing Business</h2>
-                <p class="title-text">Приложение</p>
-                <p class="title-texts">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ullam, corrupti.
-                </p>
+                <div class="add-text">
+                  <h2 class="title">Growing Business</h2>
+                  <p class="title-text">Приложение</p>
+                  <!-- <p class="title-texts">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ullam, corrupti.
+                  </p> -->
+                </div>
               </a>
             </li>
           </ul>
@@ -223,35 +245,44 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-        <a href="./index.html" class="logo">
-          <p class="logo-nav two">
-            Web <span class="logo-text-footer">Studio</span>
-          </p>
-        </a>
-        <address class="address-primary">
-          г. Киев, пр-т Леси Украинки, 26
-        </address>
-        <address class="address-secondary">
-          info@example.com <br />
-          +38 099 111 11 11
-        </address>
+        <div class="footers">
+          <div class="footer-address">
+            <a href="./index.html" class="logo">
+              <p class="logo-nav two">
+                Web <span class="logo-text-footer">Studio</span>
+              </p>
+            </a>
+            <address class="address-primary">
+              г. Киев, пр-т Леси Украинки, 26
+            </address>
+            <address class="address-secondary">
+              info@example.com <br />
+              +38 099 111 11 11
+            </address>
+          </div>
 
-        <p class="footer-end">
-          <b class="end">ПРИСОЕДИНЯЙТЕСЬ</b>
-        </p>
-        <ul>
-          <li><a href="" aria-label="cсылка на Facebook">Facebook</a></li>
-          <li><a href="" aria-label="ссылка на Twitter">Twitter</a></li>
-          <li><a href="" aria-label="ссылка на Instagram">Instagram</a></li>
-          <li><a href="" aria-label="ссылка на LinkedIn">LinkedIn</a></li>
-        </ul>
+          <div class="footer-link">
+            <p class="footer-end">
+              <b class="end">ПРИСОЕДИНЯЙТЕСЬ</b>
+            </p>
+            <ul>
+              <li><a href="" aria-label="cсылка на Facebook">Facebook</a></li>
+              <li><a href="" aria-label="ссылка на Twitter">Twitter</a></li>
+              <li><a href="" aria-label="ссылка на Instagram">Instagram</a></li>
+              <li><a href="" aria-label="ссылка на LinkedIn">LinkedIn</a></li>
+            </ul>
+          </div>
 
-        <p class="footer-end">
-          <b class="end">ПОДПИШИТЕСЬ НА РАССЫЛКУ </b>
-        </p>
+          <div class="footer-button">
+            <p class="footer-end">
+              <b class="end">ПОДПИШИТЕСЬ НА РАССЫЛКУ </b>
+            </p>
 
-        <!-- <button type="button" class="button">Подписаться</button> -->
-        <a href="" class="button two">Подписаться</a>
+            <!-- <button type="button" class="button">Подписаться</button> -->
+            <a href="" class="button two">Подписаться</a>
+          </div>
+        </div>
+
         <p class="copyrigth">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
